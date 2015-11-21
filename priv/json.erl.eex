@@ -14,17 +14,18 @@
 <%= for action <- context.actions do %>
 <%= action.docstring %>
 <%= action.function_name %>(Client, Input)
-  when is_map(Client), is_map(Input) ->
+  when is_reference(Client), is_map(Input) ->
     <%= action.function_name %>(Client, Input, []).
 <%= action.function_name %>(Client, Input, Options)
-  when is_map(Client), is_map(Input), is_list(Options) ->
+  when is_reference(Client), is_map(Input), is_list(Options) ->
     request(Client, <<"<%= action.name %>">>, Input, Options).
 <% end %>
 %%====================================================================
 %% Internal functions
 %%====================================================================
 
-request(Client, Action, Input, Options) ->
+request(CredRef, Action, Input, Options) ->
+    Client = aws_client:get_creds(CredRef),
     Client1 = Client#{service => <<"<%= context.endpoint_prefix %>">>},
     Host = aws_util:binary_join([<<"<%= context.endpoint_prefix %>.">>,
                                  maps:get(region, Client1),
