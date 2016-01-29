@@ -19,6 +19,7 @@ defmodule AWS.CodeGen do
     {:json, "AWS.KMS", "kms/2014-11-01", "kms.ex"},
     {:json, "AWS.Logs", "logs/2014-03-28", "logs.ex"},
     {:json, "AWS.OpsWorks", "opsworks/2013-02-18", "ops_works.ex"},
+    {:json, "AWS.Route53", "route53/2013-04-01", "route53.ex"},
     {:json, "AWS.Route53.Domains", "route53domains/2014-05-15", "route53_domains.ex"},
     {:json, "AWS.SSM", "ssm/2014-11-06", "ssm.ex"},
     {:json, "AWS.StorageGateway", "storagegateway/2013-06-30", "storage_gateway.ex"},
