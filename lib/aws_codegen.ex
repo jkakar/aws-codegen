@@ -22,6 +22,7 @@ defmodule AWS.CodeGen do
     {:json, "AWS.MCA", "marketplacecommerceanalytics/2015-07-01", "mca.ex"},
     {:json, "AWS.OpsWorks", "opsworks/2013-02-18", "ops_works.ex"},
     {:json, "AWS.Route53.Domains", "route53domains/2014-05-15", "route53_domains.ex"},
+    {:json, "AWS.SNS", "sns/2010-03-31/", "sns.ex"},
     {:json, "AWS.SSM", "ssm/2014-11-06", "ssm.ex"},
     {:json, "AWS.StorageGateway", "storagegateway/2013-06-30", "storage_gateway.ex"},
     {:json, "AWS.Support", "support/2013-04-15", "support.ex"},
