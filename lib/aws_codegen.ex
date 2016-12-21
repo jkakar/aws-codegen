@@ -33,6 +33,7 @@ defmodule AWS.CodeGen do
     {:json, "AWS.Marketplace.Metering", "meteringmarketplace/2016-01-14", "marketplace_metering.ex"},
     {:json, "AWS.OpsWorks", "opsworks/2013-02-18", "ops_works.ex"},
     {:json, "AWS.Route53.Domains", "route53domains/2014-05-15", "route53_domains.ex"},
+    {:json, "AWS.SNS", "sns/2010-03-31/", "sns.ex"},
     {:json, "AWS.SSM", "ssm/2014-11-06", "ssm.ex"},
     {:json, "AWS.ServiceCatalog", "servicecatalog/2015-12-10", "service_catalog.ex"},
     {:json, "AWS.StorageGateway", "storagegateway/2013-06-30", "storage_gateway.ex"},
