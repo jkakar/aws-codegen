@@ -1,7 +1,8 @@
 defmodule AWS.CodeGen do
   @elixir_services [
     {:json, "AWS.AppStream", "appstream/2016-12-01", "appstream.ex", []},
-    {:json, "AWS.AutoScaling", "application-autoscaling/2016-02-06", "autoscaling.ex", []},
+    {:json, "AWS.ApplicationAutoScaling", "application-autoscaling/2016-02-06", "application_autoscaling.ex", []},
+    {:json, "AWS.AutoScaling", "autoscaling/2011-01-01", "autoscaling.ex", []},
     {:json, "AWS.Budgets", "budgets/2016-10-20", "budgets.ex", []},
     {:json, "AWS.CertificateManager", "acm/2015-12-08", "certificate_manager.ex", []},
     {:json, "AWS.CloudHSM", "cloudhsm/2014-05-30", "cloud_hsm.ex", []},
@@ -74,7 +75,8 @@ defmodule AWS.CodeGen do
   ]
 
   @erlang_services [
-    {:json, "aws_autoscaling", "application-autoscaling/2016-02-06", "aws_autoscaling.erl", []},
+    {:json, "aws_application_autoscaling", "application-autoscaling/2016-02-06", "aws_application_autoscaling.erl", []},
+    {:json, "aws_autoscaling", "autoscaling/2011-01-01", "aws_autoscaling.erl", []},
     {:json, "aws_certificate_manager", "acm/2015-12-08", "aws_certificate_manager.erl", []},
     {:json, "aws_cloudwatch_events", "events/2015-10-07", "aws_cloudwatch_events.erl", []},
     {:json, "aws_cloud_hsm", "cloudhsm/2014-05-30", "aws_cloud_hsm.erl", []},
